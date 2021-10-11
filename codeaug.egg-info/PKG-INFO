@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: codeaug
+Version: 0.1.0
+Summary: A project for code augmentations
+Home-page: TBD
+Author: Sergey Troshin
+Author-email: serj.troshin2013@yandex.ru
+License: BSD 2-clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence

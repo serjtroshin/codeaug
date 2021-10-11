@@ -1,0 +1,10 @@
+README.md
+setup.py
+codeaug/__init__.py
+codeaug/test.py
+codeaug/varm.py
+codeaug.egg-info/PKG-INFO
+codeaug.egg-info/SOURCES.txt
+codeaug.egg-info/dependency_links.txt
+codeaug.egg-info/requires.txt
+codeaug.egg-info/top_level.txt
