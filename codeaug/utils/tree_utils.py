@@ -1,7 +1,8 @@
-from tree_sitter import Language, Parser, Tree
+from typing import Generator, Any
+from tree_sitter import Language, Parser, Tree, Node
 
 
-def traverse_tree(tree: Tree):
+def traverse_tree(tree: Tree) -> Generator[Node, None, None]:
     cursor = tree.walk()
 
     reached_root = False
@@ -43,7 +44,7 @@ class TreeSitterCode:
     def code(self):
         return self.code_bytes.decode()
     
-    def traverse(self):
+    def traverse(self) -> Generator[Node, None, None]:
         for item in traverse_tree(self.tree):
             yield item
             

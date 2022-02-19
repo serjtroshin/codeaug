@@ -2,11 +2,11 @@ import os
 import argparse
 from pathlib import Path
 
-from codeaug.utils.token_utils import detok, colored
+from codeaug.utils.token_utils import detok, colored, tokenize
 from codeaug.utils.tree_utils import TreeSitterCode, traverse_tree
 from codeaug.utils.fast_dict import ListDict
 
-from tree_sitter import Language, Parser, Tree
+from tree_sitter import Language, Parser, Tree, Node
 
 import random
 from random import randint
@@ -68,7 +68,9 @@ class VarMisuse:
     
     def __call__(self, code_example, p=0.0):
         code = TreeSitterCode(code_example, self.parser)
+        # print(colored(code.code))
         bugged_code = insert_variable_misuse(code, p=p)
+        # print(colored(bugged_code))
         return bugged_code
 
 
